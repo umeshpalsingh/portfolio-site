@@ -1,0 +1,162 @@
+/*
+COLOR PALETTES
+#F1F6F9
+#14274E
+#394867
+#9BA4B4
+*/
+
+/* Global styles
+----------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #2D3047;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+  border-radius: 5%;
+}
+a {
+  color: #0F4C75;
+  text-decoration: none;
+}
+a:hover {
+  color: #FBFCFF;
+}
+h1 {
+  font-size: 6.25rem;
+  line-height: 1;
+  padding-top: 20px;
+}
+h2 {
+  font-size: 45px;
+}
+h1, h2 {
+  font-weight: 400;
+  margin: 0;
+  font-family: 'Cookie', cursive;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.divider > section {
+  border-bottom: 1px solid #9BA4B4;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+
+/* Profile
+----------------------------------------------*/
+header {
+  background-color: #14274E;
+  color: #F1F6F9;
+  text-align: center;
+}
+
+header img {
+  border-radius: 100%;
+}
+
+header h2 {
+  padding-bottom: 30px;
+}
+
+
+/* Projects
+----------------------------------------------*/
+.projects {
+  background-color: #F1F6F9;
+}
+.projects a {
+  color: #F1F6F9;
+  padding: 5px;
+  background-color: #14274E;
+  border-radius: 5px;
+}
+.projects a:hover {
+  opacity: 80%;
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item img {
+  float: left;
+  filter: drop-shadow(5px 5px 5px grey);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+
+
+/* Contact
+----------------------------------------------*/
+footer {
+  background: #9BA4B4;
+  text-align: center;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+
+/* Responsive
+----------------------------------------------*/
+@media (max-width:768px) {
+  body {
+    text-align: center;
+    align-items: center;
+  }
+  header img {
+    width: 15.625rem;
+    border-radius: 4%;
+
+  }
+  h1 {
+    font-size: 4.375rem;
+    padding-bottom: 20px;
+  }
+
+  header h2 {
+    padding-bottom: 10px;
+    font-size: 2.1rem;
+    padding-bottom: 30px;
+  }
+  header p {
+   line-height: 1.9;
+   padding-bottom: 20px;
+  }
+
+  .project-item img {
+    float: none;
+  }
+
+}
